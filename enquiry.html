@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Volunteer or Donate - Sunshine Shelter Home</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Sunshine Shelter Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <h1>Enquiry Form</h1>
+    </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="services.html">Adopt a Pet</a>
-    <a href="enquiry.html">Volunteer / Donate</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <main>
+        <form id="enquiry-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
 
-  <main>
-    <h1>Get Involved</h1>
-    <p>Join us as a volunteer or support our work through donations. Fill in the form below and we’ll get back to you.</p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    <form>
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required>
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="">--Choose a Service--</option>
+                <option value="Dog Adoption">Dog Adoption</option>
+                <option value="Cat Adoption">Cat Adoption</option>
+                <option value="Volunteer">Volunteer Programs</option>
+                <option value="Fundraising">Fundraising Events</option>
+            </select>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
-      <label for="message">How would you like to help?</label>
-      <textarea id="message" name="message" rows="5"></textarea>
+            <button type="submit">Submit Enquiry</button>
+        </form>
 
-      <input type="submit" value="Submit">
-    </form>
-  </main>
+        <div id="enquiry-feedback" class="feedback"></div>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Sunshine Shelter Home</p>
-  </footer>
-
+    <script src="js/forms.js"></script>
 </body>
 </html>
-
